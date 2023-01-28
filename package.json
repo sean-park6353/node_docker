@@ -1,15 +1,22 @@
 {
-  "name": "js",
+  "name": "node_docker",
   "version": "1.0.0",
-  "description": "",
-  "main": "tmp.js",
+  "description": "1. 꼭 Dockerfile로 모든걸 움직여야 할까?     1. 먼저 컨테이너를 만든다음          1. `docker run --name jiseong_container -it -d -p {host_port}:8080 node`     2. 그 컨테이너에 접속한다         1. `docker exec -it jiseong_container /bin/bash`      3. 현재 내 위치에 있는 데이터들을 컨테이너로 모두 복사한 다음          1. `docker cp {호스트경로} {컨테이너이름}:{컨테이너경로}`         2. `docker exec -it jiseong_container` 로 들어간다음     4. `npm install` 로 express 설치     5. `node index.js` 로 실행",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-park6353/node_docker.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean-park6353/node_docker/issues"
+  },
+  "homepage": "https://github.com/sean-park6353/node_docker#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "express": "^4.18.2"
   }
 }
